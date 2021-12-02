@@ -1,4 +1,3 @@
-package exercicio19;
 
 import java.io.Serializable;
 import java.util.Objects;
@@ -25,7 +24,7 @@ public class Produto implements Serializable {
     }   
     
     public Produto(String nome, double preco, int qtdEstoque, String descricao) {
-        this.id = gerador.nextInt(100) + (int) Calendar.getInstance().getTimeInMillis(); //para gerar um id único
+        this.id = gerador.nextInt(100) + (int) Calendar.getInstance().getTimeInMillis(); //para gerar um id �nico
         this.nome = nome;
         this.preco = preco;
         this.qtdEstoque = qtdEstoque;
@@ -63,7 +62,7 @@ public class Produto implements Serializable {
 
     @Override
     public String toString() {
-        return "Código: " + id + " - Nome: " + nome + ", preço: " + String.format("%.2f", preco) + ", Descrição: " + descricao;
+        return "C�digo: " + id + " - Nome: " + nome + ", pre�o: " + String.format("%.2f", preco) + ", Descri��o: " + descricao;
     }
 
     public int getId() {
@@ -103,3 +102,4 @@ public class Produto implements Serializable {
     }
     
 }
+
