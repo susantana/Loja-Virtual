@@ -10,6 +10,6 @@
  - Cadastro de Clientes
  - Consulta Cliente por nome 
  - Consulta CLiente por Código 
- - Compra de produto
+ - Venda de produto
  - Exclusão de produto
  - 
