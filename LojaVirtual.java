@@ -14,7 +14,7 @@ public class LojaVirtual implements Sistema {
         if (p != null && this.pesquisar(p.getId()) == null) {
             this.produtos.add(p);
         } else {
-            throw new ProdutoExistente("O produto já está cadastrado na loja.");
+            throw new ProdutoExistente("O produto j� est� cadastrado na loja.");
         } 
     }
 
@@ -44,7 +44,7 @@ public class LojaVirtual implements Sistema {
         if (p != null) {
             p.setNome(novoNome);
         } else {
-             throw new ProdutoInexistente("O produto a ser editado não existe.");
+             throw new ProdutoInexistente("O produto a ser editado n�o existe.");
         }
               
     }
@@ -55,7 +55,7 @@ public class LojaVirtual implements Sistema {
         if (prod != null) {
             this.produtos.remove(prod);
         } else {
-            throw new ProdutoInexistente("O produto a ser removido não existe.");
+            throw new ProdutoInexistente("O produto a ser removido n�o existe.");
         }
     }
     
