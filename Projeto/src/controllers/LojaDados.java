@@ -17,11 +17,6 @@ public class LojaDados {
     public static final String ARQUIVO_CLIENTES = "clientes.txt";
     public static final String ARQUIVO_VENDAS = "vendas.txt";
     
-    /*
-    Recuperação: lê uma string de um arquivo utilizando o recuperaTextoDeArquivo
-    Depois, para cada linha, separa-se os atributos no símbolo # e monta o objeto adequado inserindo-o numa lista
-    
-    */
     public List<Produto> recuperaProdutosDeArquivo() throws IOException {
         List<Produto> listaProdutos = new ArrayList<>();
         List<String> textoProdutos = this.recuperaTextoDeArquivo(ARQUIVO_PRODUTOS);
@@ -104,10 +99,6 @@ public class LojaDados {
 
     }
 
-    /*
-     Grava��es: recebe uma lista (produto/cliente/venda) para cada item, é transformado em uma string separando os atributos por #
-     para salvar a string no arquivo, chama-se o método gravaTextoEmArquivo
-    */
     
     public void gravaProdutosEmArquivo(List<Produto> produtos) throws IOException {
         List<String> produtosTxt = new ArrayList<>();
