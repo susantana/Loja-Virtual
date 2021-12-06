@@ -46,7 +46,7 @@ public class LojaVirtual implements Sistema {
         
     @Override
     public void cadastrar(Produto p) throws ProdutoExistente {
-        //vberifica se o produto não é nullo e se ele já não existe no sistema
+       
         if (p != null && this.pesquisarProduto(p.getId()) == null) {
             //insere o produto na lista
             this.produtos.add(p);
