@@ -26,7 +26,7 @@ public class Produto implements Serializable {
     }   
     
     public Produto(String nome, double preco, int qtdEstoque, String descricao) {
-        this.id = gerador.nextInt(1000) + (Calendar.getInstance().getTimeInMillis()); //para gerar um id �nico
+        this.id = gerador.nextInt(1000) + (Calendar.getInstance().getTimeInMillis()); 
         this.nome = nome;
         this.preco = preco;
         this.qtdEstoque = qtdEstoque;
@@ -64,7 +64,7 @@ public class Produto implements Serializable {
 
     @Override
     public String toString() {
-        return "C�digo: " + id + " - Nome: " + nome + ", pre�o: " + String.format("%.2f", preco) + ", Descri��o: " + descricao;
+        return "Codigo: " + id + " - Nome: " + nome + ", preco: " + String.format("%.2f", preco) + ", Descricao: " + descricao;
     }
 
     public long getId() {
